@@ -31,8 +31,8 @@ public class LoginPhoneActivity extends AppCompatActivity {
         registrarBtn.setOnClickListener(view -> {
             setInProgress(true);
             String phoneNumber = phoneNumeberLogin.getText().toString();
-            Intent intent = new Intent(LoginPhoneActivity.this,LoginUsernameActivity.class);
-            intent.putExtra("phone",phoneNumber);
+            Intent intent = new Intent(LoginPhoneActivity.this,LoginCodigoVerificacionActivity.class);
+            intent.putExtra("phone","+51"+phoneNumber);
             startActivity(intent);
         });
 
